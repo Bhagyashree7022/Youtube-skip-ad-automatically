@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Ad Skip",
+    "description": "Automatically skips ads on YouTube for an uninterrupted viewing experience.",
+    "version": "1.0.1",
+    "content_scripts": [
+      {
+        "js": ["script.js"],
+        "run_at": "document_idle",
+        "matches": ["https://www.youtube.com/*"]
+      }
+    ],
+    "permissions": [
+      "tabs",
+      "activeTab"
+    ]
+  }
